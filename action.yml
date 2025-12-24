@@ -1,0 +1,14 @@
+name: Stale PR Notifier
+description: A GitHub Action to notify about stale pull requests.
+
+inputs:
+  stale-pr-time:
+    description: The number of hours a PR has been open without activity to be considered stale
+    required: true
+    default: 8
+
+outputs: {}
+
+runs:
+  using: node24
+  main: src/index.js

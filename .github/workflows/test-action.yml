@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello_world_job:
+    name: A job to test the Stale PR Notifier action
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Stale PR Notifier action step
+        id: stale-pr-notifier
+        uses: RedlineTriad/stale-pr-notifier@main
+        with:
+          stale-pr-time: 8
