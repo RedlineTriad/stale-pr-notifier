@@ -6,6 +6,9 @@ inputs:
     description: The number of hours a PR has been open without activity to be considered stale
     required: true
     default: 8
+  github-token:
+    description: GitHub token to authenticate API requests
+    required: false
 
 outputs: {}
 
