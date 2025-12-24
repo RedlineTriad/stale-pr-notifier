@@ -14,3 +14,4 @@ jobs:
         uses: RedlineTriad/stale-pr-notifier@main
         with:
           stale-pr-time: 8
+        secrets: inherit
