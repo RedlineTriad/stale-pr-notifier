@@ -1,5 +1,5 @@
 name: Stale PR Notifier
-description: A GitHub Action to notify about stale pull requests.
+description: A GitHub Action to notify about stale pull requests. Very cool!
 
 inputs:
   stale-pr-time:
