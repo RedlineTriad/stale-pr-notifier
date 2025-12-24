@@ -3,6 +3,9 @@ on:
     branches:
       - main
 
+permissions:
+  pull-requests: write
+
 jobs:
   hello_world_job:
     name: A job to test the Stale PR Notifier action
