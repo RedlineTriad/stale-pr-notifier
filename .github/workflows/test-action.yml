@@ -16,5 +16,5 @@ jobs:
         id: stale-pr-notifier
         uses: RedlineTriad/stale-pr-notifier@main
         with:
-          stale-pr-time: 8
+          stale-pr-time: 0
           github-token: ${{ secrets.GITHUB_TOKEN }}
