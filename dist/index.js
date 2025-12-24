@@ -32274,7 +32274,7 @@ async function run() {
       coreExports.info("No stale PRs found");
       coreExports.info(`Checked ${pulls.length} open PRs, none stale for over ${staleHours} hours.`);
       for (const pr of pulls) {
-        coreExports.debug(`- #${pr.number} ${pr.title} (updated ${pr.updated_at})`);
+        coreExports.info(`- #${pr.number} ${pr.title} (updated ${pr.updated_at})`);
       }
       return;
     }
