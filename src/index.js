@@ -4,7 +4,9 @@ import * as github from "@actions/github";
 async function run() {
   try {
     const stalePrTimeInput = core.getInput("stale-pr-time") || "8";
+    core.info(`Stale PR time input: ${stalePrTimeInput}`);
     const staleHours = parseInt(stalePrTimeInput, 10) || 8;
+    core.info(`Using stale PR time: ${staleHours} hours`);
 
     const token = core.getInput("github-token") || process.env.GITHUB_TOKEN;
     if (!token) throw new Error("GITHUB token is required via GITHUB_TOKEN or github-token input");
